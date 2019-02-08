@@ -4,7 +4,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/Niweera/NutriBudd.svg)
 ![GitHub](https://img.shields.io/david/Niweera/NutriBudd.svg?style=flat)
 ![GitHub](https://img.shields.io/github/license/Niweera/NutriBudd.svg?style=flat)
-# NutriBudd
+# NutriBudd 
 ## Food Analyser
-### NutriBudd is your day to day buddy which will give all the information relating food nutrients and daily consumption.
+#### NutriBudd is your day to day buddy which will give all the information relating food nutrients and daily consumption.
 
