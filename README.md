@@ -2,8 +2,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/Niweera/NutriBudd.svg)
 ![GitHub languages](https://img.shields.io/github/languages/count/Niweera/Nutribudd.svg?style=flat)
 ![GitHub contributors](https://img.shields.io/github/contributors/Niweera/NutriBudd.svg)
-![GitHub](https://img.shields.io/david/Niweera/NutriBudd.svg?style=flat)
-![GitHub](https://img.shields.io/github/license/Niweera/NutriBudd.svg?style=flat)
+![GitHub Dependencies](https://img.shields.io/david/Niweera/NutriBudd.svg?style=flat)
+![GitHub License](https://img.shields.io/github/license/Niweera/NutriBudd.svg?style=flat)
 # NutriBudd 
 ## Food Analyser
 #### NutriBudd is your day to day buddy which will give all the information relating food nutrients and daily consumption.
