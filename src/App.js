@@ -8,10 +8,11 @@ import { Provider } from 'react-redux';
 import NotFound from './components/pages/NotFound';
 import store from './store';
 import Login from './components/auth/Login';
-import Footer from './components/layout/Footer';
+// import Footer from './components/layout/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -20,7 +21,7 @@ class App extends Component {
         <Router>
           <div className="App">
             <Header/>
-            <div className="container">
+            <div>
               <Switch>
                 <Route exact path="/" component={HomePage}/>
                 <Route exact path="/dashboard" component={UserIsAuthenticated(Dashboard)}/>
@@ -28,7 +29,7 @@ class App extends Component {
                 <Route component={NotFound}/>
               </Switch>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
           </div>
         </Router>
       </Provider>
