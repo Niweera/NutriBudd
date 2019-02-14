@@ -6,6 +6,9 @@ class ingredients extends Component {
     return (
       <div className="container">
         <h1>Check ingredients</h1>
+        <table>
+          <tr>Name</tr>
+        </table>
       </div>
     );
   }
