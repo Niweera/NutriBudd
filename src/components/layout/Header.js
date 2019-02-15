@@ -53,19 +53,14 @@ class Header extends Component {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link style={headingStyle} className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
               {isAuthenticated ? (
                 <li className="nav-item">
                   <Link
                     style={headingStyle}
                     className="nav-link"
-                    to="/ingredients"
+                    to="/Dashboard"
                   >
-                    Ingredients
+                    Dashboard
                   </Link>
                 </li>
               ) : null}
