@@ -53,19 +53,14 @@ class Header extends Component {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link style={headingStyle} className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
               {isAuthenticated ? (
                 <li className="nav-item">
                   <Link
                     style={headingStyle}
                     className="nav-link"
-                    to="/ingredients"
+                    to="/Dashboard"
                   >
-                    Ingredients
+                    Dashboard
                   </Link>
                 </li>
               ) : null}
@@ -86,12 +81,12 @@ class Header extends Component {
                   </button>
                   <div
                     className="dropdown-menu"
-                    style={{ backgroundColor: "#3b3a30", color: "white" }}
+                    style={{ backgroundColor: "#deba5f", color: "black" }}
                     aria-labelledby="navbarDropdown"
                   >
                     <a
                       className="dropdown-item "
-                      style={{ fontSize: "20px", color: "white" }}
+                      style={{ fontSize: "20px", color: "black" }}
                       href="#!"
                       onClick={this.onClickLogout}
                     >
@@ -115,25 +110,27 @@ class Header extends Component {
 }
 
 const navbarStyle = {
-  backgroundColor: "#3b3a30",
+  backgroundColor: "#deba5f",
   textShadow: "0 1px 3px rgba(0,0,0,.5)",
-  color: "white"
+  color: "black"
 };
 
 const loginStyle = {
-  backgroundColor: "#3b3a30",
+  backgroundColor: "#deba5f",
   textShadow: "0 1px 3px rgba(0,0,0,.5)",
-  color: "white",
+  color: "black",
   cursor: "pointer",
   border: "none",
   fontSize: "20px"
 };
 
 const headingStyle = {
+  color: "black",
   fontSize: "20px"
 };
 
 const headerStyle = {
+  color: "black",
   fontSize: "24px"
 };
 

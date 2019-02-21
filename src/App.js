@@ -9,7 +9,7 @@ import NotFound from "./components/pages/NotFound";
 import store from "./store";
 import Login from "./components/auth/Login";
 import Footer from "./components/layout/Footer";
-import ingredients from "./components/pages/ingredients";
+import Ingredients from "./components/pages/Ingredients";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -22,7 +22,7 @@ class App extends Component {
         <Router>
           <div className="App">
             <Header />
-            <div className="container">
+            <div>
               <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route
@@ -35,7 +35,7 @@ class App extends Component {
                   path="/login"
                   component={UserIsNotAuthenticated(Login)}
                 />
-                <Route exact path="/ingredients" component={ingredients} />
+                <Route exact path="/ingredients" component={Ingredients} />
                 <Route component={NotFound} />
               </Switch>
             </div>

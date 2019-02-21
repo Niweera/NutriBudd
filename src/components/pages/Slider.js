@@ -1,6 +1,7 @@
 import React from 'react';
 import first from '../imgs/first.jpg';
 import second from '../imgs/second.jpg';
+import { Link } from "react-router-dom";
 
 export default function Slider() {
   return (
@@ -15,7 +16,10 @@ export default function Slider() {
             <div className="mu-top-slider-content">
                 <span className="mu-slider-small-title">Welcome</span>
                 <h2 className="mu-slider-title">To The NutriBuddy</h2>
-                <h3>“To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.” </h3>           
+                <h3>“To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.” </h3>
+                <Link style={linkStyle} className="mu-send-btn" to="/ingredients">
+                    Let's Go
+                </Link>
             </div>
 
             </div>
@@ -35,4 +39,11 @@ export default function Slider() {
         </div>
     </section>
   )
+}
+
+const linkStyle = {
+  textDecoration: 'none',
+  color: 'white',
+  fontSize: '38px',
+  display: 'inline-block'
 }
