@@ -33,5 +33,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red.svg)\r ![GitHub top language](https://img.shields.io/github/languages/top/Niweera/NutriBuddy.svg)\r ![GitHub languages](https://img.shields.io/github/languages/count/Niweera/Nutribuddy.svg?style=flat)\r ![GitHub contributors](https://img.shields.io/github/contributors/Niweera/NutriBuddy.svg)\r ![GitHub Dependencies](https://img.shields.io/david/Niweera/NutriBuddy.svg?style=flat)\r ![GitHub License](https://img.shields.io/github/license/Niweera/NutriBuddy.svg?style=flat)\r # NutriBuddy \r ## Food Analyser\r #### NutriBuddy is your day to day buddy which will give all the information relating food nutrients and daily consumption.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niweera/nutribuddy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niweera/nutribuddy/issues"
+  },
+  "homepage": "https://github.com/Niweera/nutribuddy#readme"
 }
