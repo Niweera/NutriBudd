@@ -38,8 +38,8 @@ class Login extends Component {
             {message && messageType==='error' ? (
               <Alert message={message} messageType={messageType}/>
             ): null}
-            <div className="card" style={{backgroundColor: '#3b3a30', textSshadow: '0 1px 3px rgba(0,0,0,.5)', color: 'white'}}>
-              <div className="card-header text-center" style={{backgroundColor: '#212529', textShadow: '0 1px 3px rgba(0,0,0,.5)', color: 'white'}}><i className="fas fa-lock"></i> Login</div>
+            <div className="card" style={{backgroundColor: '#deba5f', textSshadow: '0 1px 3px rgba(0,0,0,.5)', color: 'white', marginBottom:'435px'}}>
+              <div className="card-header text-center" style={{backgroundColor: '#d89b02', textShadow: '0 1px 3px rgba(0,0,0,.5)', color: 'white'}}><i className="fas fa-lock"></i> Login</div>
 
               <div className="card-body">
                 <form onSubmit={this.onSubmit}>
@@ -62,7 +62,7 @@ class Login extends Component {
                   <div className="form-group row mb-0">
                     <div className="col-md-4"></div>
                     <div className="col-md-4">
-                      <button type="submit" className="btn btn-dark btn-block">
+                      <button type="submit" className="btn btn-block" style={{backgroundColor:'#d89b02'}}>
                             Login
                           </button>
                       </div>
