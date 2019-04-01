@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { firebaseConnect } from 'react-redux-firebase';
 import { notifyUser } from '../../actions/notifyActions';
 import Alert from '../layout/Alert';
+import FixedFooter from '../layout/FixedFooter';
 
 class Login extends Component {
   state = {
@@ -32,48 +33,51 @@ class Login extends Component {
   render() {
     const { message, messageType } = this.props.notify;
     return (
-      <div className="container mt-5">
-        <div className="row justify-content-center">
-          <div className="col-md-8">
-            {message && messageType==='error' ? (
-              <Alert message={message} messageType={messageType}/>
-            ): null}
-            <div className="card" style={{backgroundColor: '#deba5f', textSshadow: '0 1px 3px rgba(0,0,0,.5)', color: 'white', marginBottom:'435px'}}>
-              <div className="card-header text-center" style={{backgroundColor: '#d89b02', textShadow: '0 1px 3px rgba(0,0,0,.5)', color: 'white'}}><i className="fas fa-lock"></i> Login</div>
+      <div>
+        <div className="container mt-5">
+          <div className="row justify-content-center">
+            <div className="col-md-8">
+              {message && messageType==='error' ? (
+                <Alert message={message} messageType={messageType}/>
+              ): null}
+              <div className="card" style={{backgroundColor: '#deba5f', textSshadow: '0 1px 3px rgba(0,0,0,.5)', color: 'white'}}>
+                <div className="card-header text-center" style={{backgroundColor: '#d89b02', textShadow: '0 1px 3px rgba(0,0,0,.5)', color: 'white'}}><i className="fas fa-lock"></i> Login</div>
 
-              <div className="card-body">
-                <form onSubmit={this.onSubmit}>
-                  <div className="form-group row">
-                    <label htmlFor="email" className="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                <div className="card-body">
+                  <form onSubmit={this.onSubmit}>
+                    <div className="form-group row">
+                      <label htmlFor="email" className="col-md-4 col-form-label text-md-right">E-Mail Address</label>
 
-                    <div className="col-md-6">
-                      <input type="email" className="form-control" name="email" value={this.state.email} onChange={this.onChange} required autoFocus/>
-                    </div>
-                  </div>
-
-                  <div className="form-group row">
-                    <label htmlFor="password" className="col-md-4 col-form-label text-md-right">Password</label>
-
-                    <div className="col-md-6">
-                      <input type="password" className="form-control" name="password" value={this.state.password} onChange={this.onChange} required/>
-                    </div>
-                  </div>
-
-                  <div className="form-group row mb-0">
-                    <div className="col-md-4"></div>
-                    <div className="col-md-4">
-                      <button type="submit" className="btn btn-block" style={{backgroundColor:'#d89b02'}}>
-                            Login
-                          </button>
+                      <div className="col-md-6">
+                        <input type="email" className="form-control" name="email" value={this.state.email} onChange={this.onChange} required autoFocus/>
                       </div>
-                    <div className="col-md-4"></div>
-                  </div>
-                </form>
+                    </div>
+
+                    <div className="form-group row">
+                      <label htmlFor="password" className="col-md-4 col-form-label text-md-right">Password</label>
+
+                      <div className="col-md-6">
+                        <input type="password" className="form-control" name="password" value={this.state.password} onChange={this.onChange} required/>
+                      </div>
+                    </div>
+
+                    <div className="form-group row mb-0">
+                      <div className="col-md-4"></div>
+                      <div className="col-md-4">
+                        <button type="submit" className="btn btn-block" style={{backgroundColor:'#d89b02'}}>
+                              Login
+                            </button>
+                        </div>
+                      <div className="col-md-4"></div>
+                    </div>
+                  </form>
+                </div>
+                
               </div>
-              
             </div>
           </div>
         </div>
+        <FixedFooter/>
       </div>
     );
   }

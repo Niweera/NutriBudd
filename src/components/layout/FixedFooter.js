@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Footer() {
+export default function FixedFooter() {
   return (
-    <footer className="page-footer font-small special-color-dark">
+    <footer className="page-footer font-small special-color-dark fixed-bottom">
 
         <div className="container">
             <ul className="list-unstyled list-inline text-center">

@@ -8,11 +8,13 @@ import { Provider } from "react-redux";
 import NotFound from "./components/pages/NotFound";
 import store from "./store";
 import Login from "./components/auth/Login";
-import Footer from "./components/layout/Footer";
 import Ingredients from "./components/pages/Ingredients";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import MealContent from "./components/items/MealContent";
+import SearchIngredients from "./components/items/SearchIngredients";
+import CalculateCalories from "./components/items/CalculateCalories";
 
 
 class App extends Component {
@@ -35,11 +37,13 @@ class App extends Component {
                   path="/login"
                   component={UserIsNotAuthenticated(Login)}
                 />
-                <Route exact path="/ingredients" component={Ingredients} />
+                <Route exact path="/quicklinks" component={Ingredients} />
+                <Route exact path="/mealcontent" component={MealContent} />
+                <Route exact path="/searchingredients" component={SearchIngredients} />
+                <Route exact path="/calculatecalories" component={CalculateCalories} />
                 <Route component={NotFound} />
               </Switch>
             </div>
-            <Footer />
           </div>
         </Router>
       </Provider>

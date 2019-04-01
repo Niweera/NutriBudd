@@ -17,7 +17,7 @@ export default function Slider() {
                 <span className="mu-slider-small-title">Welcome</span>
                 <h2 className="mu-slider-title">To The NutriBuddy</h2>
                 <h3>“To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.” </h3>
-                <Link style={linkStyle} className="mu-send-btn" to="/ingredients">
+                <Link style={linkStyle} className="mu-send-btn" to="/quicklinks">
                     Let's Go
                 </Link>
             </div>

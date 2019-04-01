@@ -53,6 +53,11 @@ class Header extends Component {
                   Home
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link style={headingStyle} className="nav-link" to="/quicklinks">
+                  Quick Links
+                </Link>
+              </li>
               {isAuthenticated ? (
                 <li className="nav-item">
                   <Link
