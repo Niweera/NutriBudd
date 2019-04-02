@@ -15,8 +15,8 @@ export default function Slider() {
 
             <div className="mu-top-slider-content">
                 <span className="mu-slider-small-title">Welcome</span>
-                <h2 className="mu-slider-title">To The NutriBuddy</h2>
-                <h3>“To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.” </h3>
+                <h2 className="mu-slider-title">to NutriBuddy</h2>
+                <h3 className="mb-4">“To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.” </h3>
                 <Link style={linkStyle} className="mu-send-btn" to="/quicklinks">
                     Let's Go
                 </Link>
@@ -31,7 +31,7 @@ export default function Slider() {
             <div className="mu-top-slider-content">
                 <span className="mu-slider-small-title">NutriBuddy</span>
                 <h2 className="mu-slider-title">Measure your calorie intake</h2>
-                <h3>"If you don't take care of your body, where are you going to live?" </h3>           
+                <h3>"If you don't take care of your body, how are you going to live healthily?" </h3>           
             </div>
 
             </div>  
