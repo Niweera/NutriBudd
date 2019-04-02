@@ -1,10 +1,23 @@
 import React from 'react';
 import FixedFooter from "../layout/FixedFooter";
+import first from '../imgs/first.jpg';
 
 export default function CalculateCalories() {
   return (
     <div>
-      <h1 className="text-center">This is the landing page to Calculate Calories function</h1>
+      <section id="mu-slider">
+        <div className="mu-slider-area"> 
+          <div className="mu-top-slider">
+            <div className="mu-top-slider-single">
+              <img src={first} alt="img"/>
+              <div className="mu-top-slider-content">
+                  <h3 className="mb-4">Calculate Calories Page</h3>
+                  {/* add code here */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <FixedFooter/>
     </div>
   )
